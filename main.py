@@ -20,7 +20,7 @@ def avvia_banca():
         match scelta:
             case '1':
                 print("Hai scelto: Crea utente.")
-                crea_utente.crea_utente_conto(conti)
+                crea_utente.crea_utente_conto()
             case '2':
                 print("Hai scelto: Verifica conto.")
                 verifica_conto.verifica(conti)
