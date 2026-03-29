@@ -13,7 +13,7 @@ def esegui_prelievo(conti):
             importo_da_prelevare= float(input("Quanto vuoi Prelevare? "))
 
             if 0 < importo_da_prelevare <= conto_trovato.saldo:
-                conto_trovato.saldo -= importo_da_prelevare
+                conto_trovato.saldo -= importo_da_prelevare #aggiunto funzione per il calcolo matematico della sottrazione
                 print(f"\nOperazione completata! Hai prelevato {importo_da_prelevare} €.")
                 print(f"Il tuo NUOVO SALDO è: {conto_trovato.saldo} €")
 
