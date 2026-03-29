@@ -23,13 +23,13 @@ def avvia_banca():
                 crea_utente.crea_utente_conto()
             case '2':
                 print("Hai scelto: Verifica conto.")
-                verifica_conto.verifica(conti)
+                verifica_conto.verifica()
             case '3':
                 print("Hai scelto: Deposita.")
-                deposito.esegui_deposito(conti)
+                deposito.esegui_deposito()
             case '4':
                 print("Hai scelto: Ritira.")
-                prelevare.esegui_prelievo(conti)
+                prelevare.esegui_prelievo()
             case '5':
                 print("Grazie per aver usato la Banca M.I.C.E.N.E")
                 break 

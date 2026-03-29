@@ -13,7 +13,7 @@ def crea_utente_conto():
     if connessione:
         try:
             cursor = connessione.cursor()
-            query = "INSERT INTO conti (id_conto, nome_titolare, saldo) VALUES (%s, %s, %s) "
+            query = "INSERT INTO conti (id_conto, nome_titolare, saldo) VALUES (%s, %s, %s) " #Inserita QUERY per il DB PhPMyadmin
             valori = (id_conto, nome, saldo_iniziale)
 
             cursor.execute (query, valori)
