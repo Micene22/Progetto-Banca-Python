@@ -1,4 +1,4 @@
-# File: conto.py
+
 
 class ContoBancario:
     def __init__(self, nome_titolare, id_conto):
@@ -6,6 +6,3 @@ class ContoBancario:
         self.id= id_conto
         self.saldo = 0.0
 
-    # In futuro qui aggiungeremo:
-    # def deposita(self, importo): ...
-    # def ritira(self, importo): ...

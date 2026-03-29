@@ -21,10 +21,10 @@ def verifica():
                 print(f"Titolare: {nome}")
                 print(f"Saldo Attuale: {saldo} €")
             else:
-                print(f"Errore: Nessun conto trovato con l'ID {id_inserito}")
+                print(f"❌ Errore: Nessun conto trovato con l'ID {id_inserito}")
 
         except Exception as e:
-            print(f" Errore durante la lettura: {e}")
+            print(f"❌ Errore durante la lettura: {e}")
 
         finally:
             cursor.close()

@@ -19,11 +19,11 @@ def crea_utente_conto():
             cursor.execute (query, valori)
             connessione.commit()
 
-            print(f"\nConto creato con successo! Benvenuto {nome}.")
+            print(f"\n ✅ Conto creato con successo! Benvenuto {nome}.")
             print(f"IL TUO NUMERO IDENTIFICATIVO (ID) ASSEGNATO È: {id_conto}")
             print("Conservalo con cura, ti servirà per le prossime operazioni!")
         except Exception as e:
-            print(f"ERRORE DURANTE LA CREAZIONE{e}: ")
+            print(f"❌ ERRORE DURANTE LA CREAZIONE{e}: ")
         finally:
             cursor.close()
             connessione.close()
